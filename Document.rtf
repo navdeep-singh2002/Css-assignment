@@ -1,0 +1,273 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset0 Times New Roman;}{\f2\fnil\fcharset0 Courier New;}{\f3\fnil\fcharset0 Segoe UI Symbol;}{\f4\fnil Times New Roman;}{\f5\fnil Calibri Light;}{\f6\fnil\fcharset0 Calibri Light;}{\f7\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red46\green116\blue181;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa160\sl259\slmult0\f0\fs32\lang9 Q 1 Explain the difference between inline ,internal,and external css.\par
+
+\pard\sb100\sa100\sl240\slmult1\b\f1 Answer.\fs27  1. Inline CSS (\lang1033 CSS)\par
+\fs24\lang9 Definition:\b0  CSS styles are written \b directly in the HTML tag\b0  using the \f2\fs20 style\f1\fs24  attribute.\par
+ \b Use Case:\b0  When you want to apply a unique style to a \b single element only\b0 .\par
+\b Example:\b0\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\b\f2\fs20 html\par
+<p style="color: red; font-size: 20px;">This is inline CSS</p>\par
+\par
+
+\pard\sb100\sa100\sl240\slmult1\f1\fs27 2. Internal CSS (\lang1033 CSS)\par
+\fs24\lang9 Definition:\b0  CSS is written \b inside a \f2\fs20 <style>\f1\fs24  tag\b0  within the \f2\fs20 <head>\f1\fs24  section of the HTML document.\par
+\f3 .\b\f1 Use Case:\b0  When you want to apply styles to a \b single HTML page only\b0 .\par
+ \b Example:\b0\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\b\f2\fs20 html\par
+CopyEdit\par
+<html>\par
+<head>\par
+  <style>\par
+    p \{\par
+      color: blue;\par
+      font-size: 18px;\par
+    \}\par
+  </style>\par
+</head>\par
+<body>\par
+  <p>This is internal CSS</p>\par
+</body>\par
+</html>\par
+\par
+\par
+
+\pard\sb100\sa100\sl240\slmult1\f1\fs27 3. External CSS (\lang1033 CSS)\par
+\fs24\lang9 Definition:\b0  CSS is written in a \b separate \f2\fs20 .css\f1\fs24  file\b0  and linked to the HTML using the \f2\fs20 <link>\f1\fs24  tag.\par
+\f3\lang1033 *\f4\lang9  \b\f1 Use Case:\b0  Best for \b large websites\b0  with multiple pages.\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\f2\fs20 html\par
+\b\par
+<!-- HTML file -->\par
+<head>\par
+  <link rel="stylesheet" href="style.css">\par
+</head>\par
+<body>\par
+  <p>This is external CSS</p>\par
+</body>\par
+css\par
+CopyEdit\par
+/* style.css file */\par
+p \{\par
+  color: green;\par
+  font-size: 16px;\par
+\b0\}\par
+\b\par
+\par
+
+\pard\sa160\sl259\slmult0\b0\f0\fs36 Q.2 Describe css selectors and list the tyepes  of selectors (e.g., element ,class,id).\par
+
+\pard\sb100\sa100\sl240\slmult1\f1 Anser :\b\fs24  CSS Selectors\b0  are patterns used to \b select and style HTML elements\b0  on a webpage.\line They tell the browser \b which element(s)\b0  the CSS rules should apply to.\par
+
+\pard\sa160\sl259\slmult0\f0\fs36 p \{\par
+  color: red;\par
+\}\par
+\fs22 Here, \f2\fs20 p\f0\fs22  is a selector that targets all \f2\fs20 <p>\f0\fs22  (paragraph) elements and sets their text color to red.\par
+
+\pard\keep\keepn\sb40\sl259\slmult0\cf1\f5\fs26  \f6\lang1033 #\lang9 Types of CSS Selectors1. Universal Selector (\f2\fs20 *\f6\fs26 )\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\sl240\slmult1\tx720\cf0\f1\fs24 Selects \b all elements\b0  on the page.\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\f2\fs20 css\par
+\par
+* \{\par
+  margin: 0;\par
+  padding: 0;\par
+\}\par
+
+\pard\sa160\sl259\slmult0\f0\fs22\par
+
+\pard\sb100\sa100\sl240\slmult1\b\f1\fs27 2. Element Selector (Type Selector)\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\sl240\slmult1\tx720\b0\fs24 Selects \b all elements of a specific type\b0 .\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\f2\fs20 css\par
+h1 \{\par
+  font-size: 24px;\par
+\}\par
+
+\pard\sa160\sl259\slmult0\f0\fs22\par
+
+\pard\sb100\sa100\sl240\slmult1\b\f1\fs27 3. Class Selector\par
+\b0\fs24 Selects elements with a specific \b class attribute\b0 .\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\f2\fs20 css\par
+.box \{\par
+  background-color: yellow;\par
+\}\par
+
+\pard\sb100\sa100\sl240\slmult1\f1\fs24 HTML: \f2\fs20 <div class="box">Hello</div>\f1\fs24\par
+
+\pard\sa160\sl259\slmult0\f0\fs22\par
+
+\pard\sb100\sa100\sl240\slmult1\b\f1\fs27 4. ID Selector \par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\sl240\slmult1\tx720\b0\fs24 Selects a \b unique element\b0  with a specific ID.\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\f2\fs20 css\par
+\par
+#header \{\par
+  background-color: blue;\par
+\}\par
+
+\pard\sb100\sa100\sl240\slmult1\f1\fs24 HTML: \f2\fs20 <div id="header">Welcome</div>\f1\fs24\par
+
+\pard\sa160\sl259\slmult0\f0\fs22\par
+
+\pard\sb100\sa100\sl240\slmult1\b\f1\fs27 5. Group Selector\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\sl240\slmult1\tx720\b0\fs24 Applies the same styles to \b multiple selectors\b0 .\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\f2\fs20 css\par
+CopyEdit\par
+h1, h2, p \{\par
+  font-family: Arial;\par
+\}\par
+
+\pard\sa160\sl259\slmult0\f0\fs22\par
+
+\pard\sb100\sa100\sl240\slmult1\b\f1\fs27 6. Descendant Selector\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\sl240\slmult1\tx720\b0\fs24 Selects elements that are \b inside another element\b0 .\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\f2\fs20 css\par
+CopyEdit\par
+div p \{\par
+  color: green;\par
+\}\par
+
+\pard\sa160\sl259\slmult0\f0\fs22\par
+
+\pard\sb100\sa100\sl240\slmult1\b\f1\fs27 7. Child Selector (\f2\fs20 >\f1\fs27 )\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\sl240\slmult1\tx720\b0\fs24 Selects \b direct child elements\b0  only.\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\f2\fs20 css\par
+ul > li \{\par
+  list-style: none;\par
+\}\par
+
+\pard\sa160\sl259\slmult0\f0\fs22\par
+
+\pard\sb100\sa100\sl240\slmult1\b\f1\fs27 8. Adjacent Sibling Selector (\f2\fs20 +\f1\fs27 )\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\sl240\slmult1\tx720\b0\fs24 Selects an element that is \b immediately after another\b0 .\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\f2\fs20 css\par
+CopyEdit\par
+h1 + p \{\par
+  color: gray;\par
+\}\par
+
+\pard\sa160\sl259\slmult0\f0\fs22\par
+
+\pard\sb100\sa100\sl240\slmult1\b\f1\fs27 9. Attribute Selector\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\sl240\slmult1\tx720\b0\fs24 Selects elements based on an \b attribute or attribute value\b0 .\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\f2\fs20 css\par
+CopyEdit\par
+input[type="text"] \{\par
+  border: 1px solid black;\par
+\}\par
+
+\pard\sa160\sl259\slmult0\f0\fs22\par
+
+\pard\sb100\sa100\sl240\slmult1\b\f1\fs27 10. Pseudo-class Selector (\f2\fs20 :hover\f1\fs27 , \f2\fs20 :nth-child\f1\fs27 )\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\sl240\slmult1\tx720\b0\fs24 Selects elements based on a \b special state or position\b0 .\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\f2\fs20 css\par
+CopyEdit\par
+a:hover \{\par
+  color: red;\par
+\}\par
+\par
+li:nth-child(2) \{\par
+  font-weight: bold;\par
+\}\par
+
+\pard\sa160\sl259\slmult0\f0\fs22\par
+
+\pard\sb100\sa100\sl240\slmult1\b\f1\fs27 11. Pseudo-element Selector (\f2\fs20 ::before\f1\fs27 , \f2\fs20 ::after\f1\fs27 )\par
+
+\pard{\pntext\f7\'B7\tab}{\*\pn\pnlvlblt\pnf7\pnindent360{\pntxtb\'B7}}\fi-360\li720\sb100\sa100\sl240\slmult1\tx720\b0\fs24 Used to style \b parts of elements\b0 .\par
+
+\pard\sl240\slmult1\tx916\tx1832\tx2748\tx3664\tx4580\tx5496\tx6412\tx7328\tx8244\tx9160\tx10076\tx10992\tx11908\tx12824\tx13740\tx14656\f2\fs20 css\par
+\par
+p::first-letter \{\par
+  font-size: 30px;\par
+\}\par
+
+\pard\sa160\sl259\slmult0\b\f0\fs36\par
+Q3.Discuss the CSS box model and its \b0\fs32 components\b\fs36 .\par
+Answer:\par
+\par
+The \b0 CSS Box Model is a fundamental concept in web development. It describes how each HTML element is represented as a rectangular box and how its size and spacing are calculated.\par
+\par
+\par
+---\par
+\par
+Components of the CSS Box Model:\par
+\par
+1). Content:\par
+The area where text or images appear. Size is set using width and height.\par
+\par
+\par
+2). Padding:\par
+The space between the content and the border. It adds space inside the element.\par
+\par
+\par
+3). Border:\par
+A line around the padding and content. Its size and style can be customized.\par
+\par
+\par
+4). Margin:\par
+The space outside the border. It separates the element from others.\par
+\par
+\f3 .\f0  Box Model Diagram:\par
+\par
++---------------------------+\par
+|         Margin            |\par
+|  +---------------------+  |\par
+|  |       Border        |  |\par
+|  |  +---------------+  |  |\par
+|  |  |    Padding    |  |  |\par
+|  |  | +-----------+ |  |  |\par
+|  |  | |  Content  | |  |  |\par
+|  |  | +-----------+ |  |  |\par
+|  |  +---------------+  |  |\par
+|  +---------------------+  |\par
++---------------------------+\par
+\par
+\par
+\par
+\par
+* Example CSS Code:\par
+\par
+div \{\par
+  width: 200px;\par
+  padding: 20px;\par
+  border: 5px solid black;\par
+  margin: 10px;\par
+\}\par
+\par
+This code creates a box with:\par
+\par
+Content width: 200px\par
+\par
+Padding: 20px\par
+\par
+Border: 5px\par
+\par
+Margin: 10px\par
+\par
+\par
+Total width = 200 + 40 (padding) + 10 (border) = 250px (excluding margin)\par
+
+\pard\sa200\sl276\slmult1\fs22\par
+}
+ 
